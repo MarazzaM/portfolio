@@ -1,0 +1,60 @@
+/*========== shortcuts function ==========*/
+@function color($color-name){
+    @return map-get($colors,$color-name)
+};
+$colors: (
+    primary: rgb(62,64,149),
+    secondary: rgb(140,216,255),
+    primary-dark:rgb(133,76,49),
+    secondary-dark: darken(rgb(133,76,49), 20%),
+    body: #f3f3f0,
+);
+
+$desktop:768px;
+
+//Fuente
+
+$font-body:'Sahitya', serif;
+$font-hero:'Allison', cursive;
+$big-big-font: 5rem;
+$biggest-font-s: 9rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.2rem;
+$regular-font: .94rem;
+$small-font: .81rem;
+$smallest-font: .75rem;
+$icon-font: 3rem;
+
+//spacing
+$normal-spacing:.1rem;
+$tittle-spacing:.2rem;
+
+//font weigth
+$font-media:500;
+$font-semi:600;
+
+//margins
+
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+//index
+$z-tooltip:10;
+$z-fixed:100;
+
+@media screen and (min-width: $desktop){
+$big-big-font:5rem;
+$biggest-font-s:1rem;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.3rem;
+$regular-font: 1.2rem;
+$small-font: .88rem;
+$smallest-font: .81rem;
+$icon-font: 2rem;
+}
