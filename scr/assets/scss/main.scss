@@ -1,20 +1,42 @@
+@import "_variables.scss";
 @import "_stars.scss";
 @import "_glitch.scss";
 @import "_nav.scss";
-@import "_variables.scss";
+@import "_about.scss";
 
+/*========== BASE + NO SCROLL BAR ==========*/
 html {
     height: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scroll-behavior: smooth;
   }
+  html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+  
 section{
 	z-index: $z-tooltip;
 	position: relative;
+  
 }
-.nav-dropdown{
-  background: rgba(38, 38, 38, 0.438);
-}
-*{
+*::before,::after{
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  .navigation, .hero{
+    font-style: italic;
+  }
+}
+.about-me, .card-about{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }

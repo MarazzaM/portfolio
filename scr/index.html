@@ -1,78 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/scss/main.css">
-    <!-- background -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-</head>
-<body>
-     <!-- nav -->
-     <section class="navigation">
-        <div class="nav-container">
-          <div class="brand">
-            <a href="#!">LastLightbringer</a>
-          </div>
-          <nav>
-            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-            <ul class="nav-list">
-              <li>
-                <a href="#!">Home</a>
-              </li>
-              <li>
-                <a href="#!">About</a>
-              </li>
-              <li>
-                <a href="#!">Services</a>
-                <ul class="nav-dropdown">
-                  <li>
-                    <a href="#!">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#!">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="#!">Graphic Design</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#!">Pricing</a>
-              </li>
-              <li>
-                <a href="#!">Portfolio</a>
-                <ul class="nav-dropdown">
-                  <li>
-                    <a href="#!">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#!">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="#!">Graphic Design</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#!">Contact</a>
-              </li>
-            </ul>
-          </nav>
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <!-- background - normalize css CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!">LastLightbringer</a>
         </div>
-      </section>
-<div class="hero">
-<canvas id="projector">Some error here :(</canvas>
-<div class="container">
-    <div class="glitch" data-text="MATIAS">MATIAS</div>
-    <div class="glow">MATIAS</div>
-    <p class="subtitle">UI/UX DEVELOPER</p>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!">Services</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Pricing</a>
+            </li>
+            <li>
+              <a href="#!">Portfolio</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Web Design</a>
+                </li>
+                <li>
+                  <a href="#!">Web Development</a>
+                </li>
+                <li>
+                  <a href="#!">Graphic Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="hero">
+      <canvas id="projector">Some error here :(</canvas>
+      <div class="container-hero">
+        <div class="glitch" data-text="MATIAS MARAZZA">MATIAS MARAZZA</div>
+        <div class="glow">MATIAS MARAZZA</div>
+        <p class="subtitle">UI/UX DEVELOPER</p>
+      </div>
+      <div class="wrapper-chevron">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="cta-span"><a href="#about-me-s">Scroll Down</a></span>
+      </div>
     </div>
-</div>
+    <div class="main-section">
+      <div class="about-wrapper">
+        <div class="about-me" id="about-me-s">
+          <div class="title-about"><h1>About Me</h1></div>
+          <div class="text-about">
+            <p>
+              I'm a self taught web UI developer, I am comfortable working with
+              JavaScript, HTML / CSS to deliver comprehensive customer
+              experiences. I am also working with ReactJs and aspire to be a
+              full MERN developer in the near future. I'm a passionate
+              developer, love to work with JS and SCSS, always eager to use the
+              latest web technologies, looking for opportunities and challenges
+              to improve my technical and soft skills.
+            </p>
+            <div class="img-about">
+              <img
+                id="imgabout"
+                src="https://media-exp1.licdn.com/dms/image/D4E35AQEu9Ukk8LbV6w/profile-framedphoto-shrink_200_200/0/1631072323064?e=1631721600&v=beta&t=NvcANlVHgONGHAwwAYHKMkU4bpo9FGvWW9q05OTeUU0"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
 
-<div><p class="texto">Hola</p></div>
+        <div class="cards-about">
+          <div class="first-card card-about">
+            <h3 class="title-card1">Earlier Coder</h1>
+            <div class="text-card"><p>I started my journey in the world of coding at the age of 15, first i picked up Arduino and C (for PIC) and that sparked the fire for my future passion for coding! I love to do group projects with people that share the same passion with me for what they do, it helps to bring the best of us!</p></div>
+
+          </div>
+          <div class="second-card card-about">
+            <h3 class="title-card2">Eternal Learner</h2>
+              <div class="text-card"><p>I'm always looking for new knowledge, whether it's reading about new technologies, developing new innovative ideas, starting new projects, and always experimenting with the things I learn.
+                I stay informed about new and creative ways of doing things, collaborating with the community!</p></div>
+          </div>
+          <div class="third-card card-about">
+            <h3 class="title-card3">Technology Enthusiast</h3>
+            <div class="text-card">I find myself reading tech blogs on a daily basis and keeping up to date with recent events related to the latest technologies and inventions. From robotics to small devices, I try to keep up to date with the news, it is something that I enjoy and I try to share with the people around me, they never cease to amaze me the new things that come out every day</div>
+          </div>
+        </div>
+
+
+
+
+        <div class="grid-about about-me about-grid">
+          <div class="grid-title div4-about"><h1>Must know!</h1></div>
+          <div class="coffe div1-about">
+            <h3 class="subtitle-about">Coffe Lover</h3>
+            <div class="coffe-icon"><i class="bx bx-coffee  bx-about"></i></div>
+            <p class="qk-text">A cup of coffe is required to start the day</p>
+          </div>
+          <div class="stackoverflow div2-about grid-border">
+            <h3 class="subtitle-about">Stack overflow Expert</h3>
+            <div class="stackoverflow-icon"><i class='bx bxl-stack-overflow  bx-about' ></i></div>
+            <p class="qk-text">I have manage to master the way of Stack Overflow!</p>
+          </div>
+          <div class="js-joke div3-about">
+            <h3 class="subtitle-about">Great joker</h3>
+            <div class="js-icon"><i class='bx bxl-javascript bx-about'></i></div>
+            <p class="qk-text">Why was the JavaScript developer sad? Because they didn't Node how to Express himself</p>
+          </div>
+
+        </div>
+
+
+
+      </div>
 
 
 
@@ -88,14 +171,15 @@
 
 
 
+    </div>
 
-<!--hero letters script -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<!-- background -->
-<script src='https://code.createjs.com/easeljs-0.7.1.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-<!-- scripts -->
-<script src="./assets/js/letters.js"></script>
-<script src="./assets/js/back.js"></script>
-</body>
+    <!--hero letters script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- background -->
+    <script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <!-- scripts -->
+    <script src="./assets/js/letters.js"></script>
+    <script src="./assets/js/back.js"></script>
+  </body>
 </html>

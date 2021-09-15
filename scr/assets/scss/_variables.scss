@@ -1,29 +1,45 @@
+/*========== FONTS ==========*/
+//oswald
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
 /*========== shortcuts function ==========*/
 @function color($color-name){
     @return map-get($colors,$color-name)
 };
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin desktop2 {
+    @media(min-width: #{$desktop2}){
+        @content;
+    }
+}
 $colors: (
-    primary: rgb(62,64,149),
-    secondary: rgb(140,216,255),
+    primary: rgb(25, 15, 121),
+    secondary: rgb(15, 175, 255),
     primary-dark:rgb(133,76,49),
     secondary-dark: darken(rgb(133,76,49), 20%),
     body: #f3f3f0,
+    nav-color:rgba(38, 38, 38, 0.438)
 );
 
 $desktop:768px;
+$desktop2:950px;
 
 //Fuente
+$font-body:'Oswald', sans-serif;
 
-$font-body:'Sahitya', serif;
-$font-hero:'Allison', cursive;
 $big-big-font: 5rem;
 $biggest-font-s: 9rem;
 $h1-font-size: 2.5rem;
-$h2-font-size: 1.4rem;
-$h3-font-size: 1.2rem;
-$regular-font: .94rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 2rem;
+$regular-font: 1.3rem;
 $small-font: .81rem;
 $smallest-font: .75rem;
+$font-size-hero: 15vw;
 $icon-font: 3rem;
 
 //spacing
@@ -48,13 +64,13 @@ $z-tooltip:10;
 $z-fixed:100;
 
 @media screen and (min-width: $desktop){
-$big-big-font:5rem;
+$big-big-font: 5rem;
 $biggest-font-s:1rem;
 $h1-font-size: 2.25rem;
-$h2-font-size: 1.5rem;
+$h2-font-size: 1.6rem;
 $h3-font-size: 1.3rem;
 $regular-font: 1.2rem;
 $small-font: .88rem;
 $smallest-font: .81rem;
-$icon-font: 2rem;
+$font-size-hero: 9vw;
 }

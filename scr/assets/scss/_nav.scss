@@ -101,6 +101,7 @@ nav {
     padding: $nav-height 0 15px;
     ul {
       display: none;
+      background: color(nav-color);
       li {
         float: none;
         a {
@@ -167,4 +168,8 @@ article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
+}
+
+.nav-dropdown{
+  background:  color(nav-color);;
 }
