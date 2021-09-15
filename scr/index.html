@@ -35,7 +35,7 @@
               <a href="#!">Home</a>
             </li>
             <li>
-              <a href="#!">About</a>
+              <a href="#about-me-s">About</a>
             </li>
             <li>
               <a href="#!">Services</a>
@@ -91,8 +91,13 @@
     </div>
     <div class="main-section">
       <div class="about-wrapper">
-        <div class="about-me" id="about-me-s">
-          <div class="title-about"><h1>About Me</h1></div>
+        <div class="about-me anim" data-delay="0s" id="about-me-s">
+          <div class="title-about"><h1>      <section class="neon-title">
+            <div class="text">
+              <h1>About Me</h1>
+              <h1>About Me</h1>
+            </div>
+          </section></h1></div>
           <div class="text-about">
             <p>
               I'm a self taught web UI developer, I am comfortable working with
@@ -114,26 +119,33 @@
         </div>
 
         <div class="cards-about">
-          <div class="first-card card-about">
-            <h3 class="title-card1">Earlier Coder</h1>
-            <div class="text-card"><p>I started my journey in the world of coding at the age of 15, first i picked up Arduino and C (for PIC) and that sparked the fire for my future passion for coding! I love to do group projects with people that share the same passion with me for what they do, it helps to bring the best of us!</p></div>
+          <div class="first-card card-about anim2" data-delay=".3s">
+            <h3 class="title-card">Earlier <br> Coder</h1>
+            <div class="text-card"><p>I started my journey in the world of coding at the age of 15, first i picked up Arduino and C (for PIC) and that sparked the fire for my future passion for coding! I love to do group projects with people that share the same passion with me for what they do, it helps to bring the best of us!</p>
+              <i class='bx bx-code-alt bx-cards' ></i>
+            </div>
 
           </div>
-          <div class="second-card card-about">
-            <h3 class="title-card2">Eternal Learner</h2>
+          <div class="second-card card-about anim4" data-delay=".7s">
+            <h3 class="title-card">Eternal <br> Learner</h2>
               <div class="text-card"><p>I'm always looking for new knowledge, whether it's reading about new technologies, developing new innovative ideas, starting new projects, and always experimenting with the things I learn.
-                I stay informed about new and creative ways of doing things, collaborating with the community!</p></div>
+                I stay informed about new and creative ways of doing things, collaborating with the community!</p>
+                <i class='bx bx-book-bookmark bx-cards'></i>
+              </div>
           </div>
-          <div class="third-card card-about">
-            <h3 class="title-card3">Technology Enthusiast</h3>
-            <div class="text-card">I find myself reading tech blogs on a daily basis and keeping up to date with recent events related to the latest technologies and inventions. From robotics to small devices, I try to keep up to date with the news, it is something that I enjoy and I try to share with the people around me, they never cease to amaze me the new things that come out every day</div>
+          <div class="third-card card-about anim2" data-delay="1s">
+            <h3 class="title-card">Technology <br> Enthusiast</h3>
+            <div class="text-card"><p>I find myself reading tech blogs on a daily basis and keeping up to date with recent events related to the latest technologies and inventions. From robotics to small devices, I try to keep up to date with the news, it is something that I enjoy and I try to share with the people around me, they never cease to amaze me the new things that come out every day</p>
+              <i class='bx bxs-file-find bx-cards'></i>
+            </div>
           </div>
+
         </div>
 
 
 
 
-        <div class="grid-about about-me about-grid">
+        <div class="grid-about about-me about-grid anim" data-delay="0s">
           <div class="grid-title div4-about"><h1>Must know!</h1></div>
           <div class="coffe div1-about">
             <h3 class="subtitle-about">Coffe Lover</h3>
@@ -181,5 +193,6 @@
     <!-- scripts -->
     <script src="./assets/js/letters.js"></script>
     <script src="./assets/js/back.js"></script>
+    <script src="./assets/js/animation.js"></script>
   </body>
 </html>

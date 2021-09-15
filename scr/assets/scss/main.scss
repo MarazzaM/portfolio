@@ -3,6 +3,7 @@
 @import "_glitch.scss";
 @import "_nav.scss";
 @import "_about.scss";
+@import "_animation.scss";
 
 /*========== BASE + NO SCROLL BAR ==========*/
 html {
@@ -40,3 +41,4 @@ background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-2
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
