@@ -5,7 +5,7 @@
 @import "_about.scss";
 @import "_animation.scss";
 @import "_portfolio.scss";
-
+@import "_chevron.scss";
 /*========== BASE + NO SCROLL BAR ==========*/
 html {
     height: 100%;
@@ -43,3 +43,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 
 }
 
+#imgabout{
+  width: 200px;
+  height: 200px;
+}

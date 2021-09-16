@@ -2,7 +2,7 @@
 //oswald
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
 
-/*========== shortcuts function ==========*/
+/*========== shortcuts function color and screen size==========*/
 @function color($color-name){
     @return map-get($colors,$color-name)
 };
@@ -22,7 +22,7 @@
     }
 }
 $colors: (
-    primary: rgb(25, 15, 121),
+    primary: rgb(235, 32, 18),
     secondary: rgb(15, 175, 255),
     primary-dark:rgb(133,76,49),
     secondary-dark: darken(rgb(133,76,49), 20%),
