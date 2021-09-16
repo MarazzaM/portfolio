@@ -14,10 +14,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
   </head>
   <body>
     <!-- nav -->
@@ -111,29 +111,29 @@
             <div class="img-about">
               <img
                 id="imgabout"
-                src="https://media-exp1.licdn.com/dms/image/D4E35AQEu9Ukk8LbV6w/profile-framedphoto-shrink_200_200/0/1631072323064?e=1631721600&v=beta&t=NvcANlVHgONGHAwwAYHKMkU4bpo9FGvWW9q05OTeUU0"
+                src="https://media-exp1.licdn.com/dms/image/D4E35AQEu9Ukk8LbV6w/profile-framedphoto-shrink_200_200/0/1631072323064?e=1631829600&v=beta&t=leaYGr6QDomHux4F0t_T2ijEVS44dRg4b6h1PvwJzr0"
                 alt=""
               />
             </div>
           </div>
         </div>
 
-        <div class="cards-about">
-          <div class="first-card card-about anim2" data-delay=".3s">
+        <div class="cards-about anim2" data-delay="0s">
+          <div class="first-card card-about">
             <h3 class="title-card">Earlier <br> Coder</h1>
             <div class="text-card"><p>I started my journey in the world of coding at the age of 15, first i picked up Arduino and C (for PIC) and that sparked the fire for my future passion for coding! I love to do group projects with people that share the same passion with me for what they do, it helps to bring the best of us!</p>
               <i class='bx bx-code-alt bx-cards' ></i>
             </div>
 
           </div>
-          <div class="second-card card-about anim4" data-delay=".7s">
+          <div class="second-card card-about">
             <h3 class="title-card">Eternal <br> Learner</h2>
               <div class="text-card"><p>I'm always looking for new knowledge, whether it's reading about new technologies, developing new innovative ideas, starting new projects, and always experimenting with the things I learn.
                 I stay informed about new and creative ways of doing things, collaborating with the community!</p>
                 <i class='bx bx-book-bookmark bx-cards'></i>
               </div>
           </div>
-          <div class="third-card card-about anim2" data-delay="1s">
+          <div class="third-card card-about">
             <h3 class="title-card">Technology <br> Enthusiast</h3>
             <div class="text-card"><p>I find myself reading tech blogs on a daily basis and keeping up to date with recent events related to the latest technologies and inventions. From robotics to small devices, I try to keep up to date with the news, it is something that I enjoy and I try to share with the people around me, they never cease to amaze me the new things that come out every day</p>
               <i class='bx bxs-file-find bx-cards'></i>
@@ -141,9 +141,6 @@
           </div>
 
         </div>
-
-
-
 
         <div class="grid-about about-me about-grid anim" data-delay="0s">
           <div class="grid-title div4-about"><h1>Must know!</h1></div>
@@ -164,11 +161,137 @@
           </div>
 
         </div>
-
-
-
       </div>
 
+
+      <div class="portfolio">
+        <div class="port-folio">
+          <div class="slider-port">
+            <div id="content-slider">
+              <div class="slider-wrap"> 
+            
+                <h1 class="slider-main-title">Portfolio</h1>
+            
+                <!-- ===== Thumbnail ControlNav ======= -->         
+                <input type="radio" id="input-1" name="i" >         
+                <input type="radio" id="input-2" name="i" >         
+                <input type="radio" id="input-3" name="i" >
+                <input type="radio" id="input-4" name="i" >
+            
+                <nav class="slider-dot-control">
+                  <label for="input-1" class="slider-dot"></label>
+                  <label for="input-2" class="slider-dot"></label>
+                  <label for="input-3" class="slider-dot"></label>
+                  <label for="input-4" class="slider-dot"></label>
+                </nav>
+            
+                <!-- =================================== -->    
+                <nav class="slider-arrow-control">
+                  <label for="input-1"></label>
+                  <label for="input-2"></label>
+                  <label for="input-3"></label>
+                  <label for="input-4"></label>
+                </nav>
+                <!-- =================================== -->
+            
+                <!--    IMAGE NAVIGATION pic -->
+                <label id="thumb-1" for="input-1" class="slider-thumb">
+                  <img src="https://i.imgur.com/9qxnioC.png" referrerpolicy="no-referrer"  alt="" id="p-1">
+                  <div class="slider-head">
+                    <h2>Ta'kabrom</h2>
+                    <p>Tattoo artist web</p>
+                    <a href="https://takabrom-tattoo.web.app" target="blank">Visit web...</a>
+                  </div>
+                </label>
+            
+                <label id="thumb-2" for="input-2" class="slider-thumb">
+                  <img src="https://i.imgur.com/nr4JLeC.png" referrerpolicy="no-referrer" alt="" id="p-2">
+                  <div class="slider-head">
+                    <h2>Vuelo del Alma</h2>
+                    <p>Professor page</p>
+                    <a href="#" target="blank">Visit web...</a>
+                  </div>
+                </label>         
+            
+                <label id="thumb-3" for="input-3" class="slider-thumb">
+                  <img src="https://imgur.com/cRXbYXa.png"  referrerpolicy="no-referrer" alt="" id="p-3">
+                  <div class="slider-head">
+                    <h2>Kitty Witty</h2> 
+                    <p>Funny page to test API´s</p> 
+                    <a href="#" target="blank">Visit web...</a>
+                  </div>
+                </label>
+            
+                <label id="thumb-4" for="input-4" class="slider-thumb" tabindex="13">
+                  <img src="https://i.imgur.com/9qxnioC.png" referrerpolicy="no-referrer"  alt="" id="p-1">
+                  <div class="slider-head">
+                    <h2>Some other page</h2>
+                    <p>Lorem ipsum dolor.</p>
+                    <a href="#" target="blank">Visit web...</a>
+                  </div>
+                </label>
+            
+                <!-- ===== IMages ======= -->                           
+            
+                <div class="slider">
+                  <div class="slider-inner">
+            
+                    <figure>
+                      <figcaption class="slider-head">
+                        <h2>Ta'kabrom</h2>
+                        <p>Tattoo artist web</p>
+                        <a href="https://takabrom-tattoo.web.app" target="blank">Visit web...</a>
+                      </figcaption>
+                      <img src="https://i.imgur.com/9qxnioC.png" referrerpolicy="no-referrer" alt="" id="i-1" class="slider-img">
+                    </figure>
+            
+                    <figure>
+                      <figcaption class="slider-head">
+                        <h2>Vuelo del Alma</h2>
+                        <p>Professor page</p>
+                        <a href="" target="blank">Visit web...</a>
+                      </figcaption>
+                      <img src="https://i.imgur.com/nr4JLeC.png" referrerpolicy="no-referrer" alt="" id="i-2" class="slider-img">
+                    </figure>
+            
+                    <figure>
+                      <figcaption class="slider-head">
+                        <h2>Kitty Witty</h2> 
+                        <p>Funny page to test API´s</p>
+                        <a href="#" target="blank">Visit web...</a>
+                      </figcaption>
+                      <img src="https://imgur.com/cRXbYXa.png"  referrerpolicy="no-referrer" alt="" id="i-3" class="slider-img">
+                    </figure>
+            
+                    <figure>
+                      <figcaption class="slider-head">
+                        <h2>Some other page</h2>
+                        <p>Lorem ipsum dolor.</p>
+                        <a href="#" target="blank">Visit web...</a>
+                      </figcaption>
+                      <img src="https://i.imgur.com/9qxnioC.png" referrerpolicy="no-referrer"  alt="" id="p-1">
+                    </figure>
+            
+            
+                    <figure>
+                      <figcaption class="slider-head">
+                        <h2>Some other page</h2>
+                        <p>Lorem ipsum dolor.</p>
+                        <a href="#" target="blank">Visit web...</a>
+                      </figcaption>
+                      <img src="https://i.imgur.com/9qxnioC.png" referrerpolicy="no-referrer"  alt="" id="p-1">
+                    </figure>               
+                  </div>
+                </div>                  
+            
+              </div>        
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
 
 
 

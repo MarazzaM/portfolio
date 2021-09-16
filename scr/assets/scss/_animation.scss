@@ -32,20 +32,5 @@ body{
         opacity: 1;
       }
     }
-  //THIRD
-  .anim4 {
-      opacity: 0;
-  }
-  
-  @keyframes anim5 {
-      from {
-        transform: translateY(-50px);
-        opacity: 0;
-      }
-      to  {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
   }
 }
