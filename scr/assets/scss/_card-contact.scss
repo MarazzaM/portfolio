@@ -11,8 +11,10 @@
     color: white;
         }
     .card-c{
-        border-radius: 6px;
-        border: 1px solid blueviolet;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
         width: 80vw;
         background: rgba(0,0,0,.6);
         &:hover{
