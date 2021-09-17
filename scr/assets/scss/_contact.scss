@@ -4,6 +4,7 @@
   align-items: center;
   font-size: $h1-font-size;
   color: white;
+  margin-left: -5rem;
 }
   p {
     display: inline-block;
@@ -41,16 +42,16 @@
   
 
   .belize {
-    color: #c9510c;
+    color: color(github);
   }
   
   .pomegranate {
-    color: #c0392b;
+    color: color(google);
   }
   
 
   .midnight {
-    color: #0077b5;
+    color: color(linkedin);
   }
   .title-about{
     h1{
