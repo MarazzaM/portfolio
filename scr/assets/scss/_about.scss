@@ -26,6 +26,12 @@
         width: 70%;
     }
 }
+.title-about{
+    margin-top: 0;
+    @include desktop{
+        margin-top: 4rem;
+    }
+}
 //image circle
 #imgabout{
     clip-path: circle(50% at 50% 50%);
