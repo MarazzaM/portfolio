@@ -130,7 +130,7 @@
   #content-slider .slider a,
   #content-slider .slider-thumb a {
     font-weight: 700;
-    color: #00ABFA;
+    color: #00bcd4;
     text-decoration: none;
     line-height: 1.2;
   }
@@ -171,7 +171,7 @@
     margin: 35rem 0% 0 0%;
     text-align: center;
     display: block;
-    z-index: 1000;
+    z-index: 88;
     cursor: pointer;
     position: absolute;
   }
@@ -225,8 +225,8 @@
     z-index: 1000;
     cursor: pointer;
     border-radius: 100%;
-    border: 2px solid #00ABFA;
-    background: #00ABFA;
+    border: 2px solid #00bcd4;
+    background: #00bcd4;
   
     transition: all 0.3s ease-in-out; 
   }
@@ -247,7 +247,7 @@
     width: 9px; 
     height: 9px; 
     background: #FFF; 
-    border: 1px solid #00ABFA; 
+    border: 1px solid #00bcd4; 
   }     
   
   

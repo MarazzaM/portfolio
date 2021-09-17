@@ -58,3 +58,19 @@
       margin-bottom: 0;
     }
   }
+  .title-a-contact{
+    text-align: center;
+    color: #fff;
+    font-size: $h2-font-size;
+    letter-spacing: $normal-spacing;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    p{
+      color: white;
+      -webkit-text-fill-color: #fff;
+      margin-bottom: 1rem;
+    }
+  }

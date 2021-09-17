@@ -1,0 +1,10 @@
+.title-fundamentals{
+    h1{
+        font-size: 2.5rem !important;
+        @include desktop{
+            font-size: $big-big-font !important;
+            word-break: break-all;
+        }
+    }
+
+}
