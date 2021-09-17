@@ -8,3 +8,18 @@
     }
 
 }
+.cards-fundamentals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include desktop{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card-fundamental{
+        display: flex;
+        flex-direction: column;
+    }
+}
