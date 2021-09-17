@@ -1,18 +1,17 @@
 const images = document.querySelectorAll(".anim");
 
 observer = new IntersectionObserver((entries) => {
-  for (var i = 0; i < entries.length; i++){
-    if(entries[i].isIntersecting){
+  for (var i = 0; i < entries.length; i++) {
+    if (entries[i].isIntersecting) {
       entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
-    } else {
-      entry.target.style.animation = "none";
+        if (entry.intersectionRatio > 0) {
+          entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+        } else {
+          entry.target.style.animation = "none";
+        }
+      });
     }
-  })
-     
-    }
-  };
+  }
 });
 
 images.forEach((image) => {
@@ -23,18 +22,18 @@ images.forEach((image) => {
 const imagess = document.querySelectorAll(".anim2");
 
 observer = new IntersectionObserver((entries) => {
-  for (var i = 0; i < entries.length; i++){
-    if(entries[i].isIntersecting){ //add code of intersecting
+  for (var i = 0; i < entries.length; i++) {
+    if (entries[i].isIntersecting) {
+      //add code of intersecting
       entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `anim3 2s ${entry.target.dataset.delay} forwards ease-out`;
-    } else {
-      entry.target.style.animation = "none";
+        if (entry.intersectionRatio > 0) {
+          entry.target.style.animation = `anim3 2s ${entry.target.dataset.delay} forwards ease-out`;
+        } else {
+          entry.target.style.animation = "none";
+        }
+      });
     }
-  })
-     
-    }
-  };
+  }
 });
 
 imagess.forEach((image) => {
@@ -42,7 +41,7 @@ imagess.forEach((image) => {
 });
 
 //slider
-var words = document.getElementsByClassName('word');
+var words = document.getElementsByClassName("word");
 var wordArray = [];
 var currentWord = 0;
 
@@ -53,47 +52,56 @@ for (var i = 0; i < words.length; i++) {
 
 function changeWord() {
   var cw = wordArray[currentWord];
-  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  var nw =
+    currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
   for (var i = 0; i < cw.length; i++) {
     animateLetterOut(cw, i);
   }
-  
+
   for (var i = 0; i < nw.length; i++) {
-    nw[i].className = 'letter behind';
+    nw[i].className = "letter behind";
     nw[0].parentElement.style.opacity = 1;
     animateLetterIn(nw, i);
   }
-  
-  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+
+  currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;
 }
 
 function animateLetterOut(cw, i) {
-  setTimeout(function() {
-		cw[i].className = 'letter out';
-  }, i*80);
+  setTimeout(function () {
+    cw[i].className = "letter out";
+  }, i * 80);
 }
 
 function animateLetterIn(nw, i) {
-  setTimeout(function() {
-		nw[i].className = 'letter in';
-  }, 340+(i*80));
+  setTimeout(function () {
+    nw[i].className = "letter in";
+  }, 340 + i * 80);
 }
 
 function splitLetters(word) {
   var content = word.innerHTML;
-  word.innerHTML = '';
+  word.innerHTML = "";
   var letters = [];
   for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement('span');
-    letter.className = 'letter';
+    var letter = document.createElement("span");
+    letter.className = "letter";
     letter.innerHTML = content.charAt(i);
     word.appendChild(letter);
     letters.push(letter);
   }
-  
+
   wordArray.push(letters);
 }
 
 changeWord();
 setInterval(changeWord, 4000);
 
+//scroll
+function scrollTop() {
+  const scrollTop = document.getElementById("navigation");
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollTop.classList.add("nav-fixed");
+  else scrollTop.classList.remove("nav-fixed");
+}
+window.addEventListener("scroll", scrollTop);

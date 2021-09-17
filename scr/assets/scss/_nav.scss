@@ -4,7 +4,7 @@ $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: transparent;
 $nav-font-color: #ffffff;
-$link-hover-color: #2581DC;
+$link-hover-color: #2581dc9a;
 
 // Outer navigation wrapper
 .navigation {
@@ -173,4 +173,19 @@ article {
 
 .nav-dropdown{
   background:  color(nav-color);;
+}
+
+.nav-fixed{
+  @media screen and (min-width: $breakpoint) {
+    background: color(nav-color-fixed);
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+.brand{
+  display: none;
+}
+  }
+  
 }
