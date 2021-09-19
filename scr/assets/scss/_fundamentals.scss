@@ -1,3 +1,4 @@
+/*========== FUNDAMENTALS ==========*/
 .title-fundamentals{
     h1{
         font-size: 2.5rem !important;
@@ -8,6 +9,7 @@
     }
 
 }
+/*========== WRAPPER CARD STYLE ==========*/
 .cards-fundamentals{
     display: flex;
     flex-direction: column;
@@ -17,9 +19,222 @@
     @include desktop{
         flex-direction: row;
         justify-content: space-around;
+        align-items: stretch;
     }
-    .card-fundamental{
-        display: flex;
-        flex-direction: column;
+}
+/*========== BASIC ALL CARDS ==========*/
+.card-fundamental{
+  transition: all .5s ease;
+    margin-bottom: 2rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: $normal-spacing;
+    font-size: $regular-font;
+    h1{
+        font-size: $h1-font-size;
     }
+    p{
+        width: 95%;
+        color: #fff;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+    button{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    @include desktop{
+        width: 30%;
+        min-height: 50vh;
+        p{
+            width: 75%;
+        }
+    }
+}
+/*========== FIRST STYLE==========*/
+.base-card-f{
+    --borderWidth: 3px;
+  background: #091243;
+  position: relative;
+  border-radius: var(--borderWidth);
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+    h1{
+      color: #fc3735;
+      background: -webkit-linear-gradient(left, $gradient-color-1,$gradient-color-2 , $gradient-color-1);
+      background-size: 1600px 200px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-duration: 3s;
+      animation-name: animationgradienttitle;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+    button{
+        display: block;
+  padding: 1rem 1.25rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #00D0FF,
+    inset 1px 1px 1px white;
+  color: #1FFFFF;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px rgba(0,208,255, 0.6), 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(3,0,128, 0.3), 
+    inset 0 0 7px 2px rgba(0,208,255, 0.6);
+  animation: flickering 5s infinite;
+
+  &:hover{
+      cursor: pointer;
+  }
+
+    }
+}
+/*========== Second Style ==========*/
+.second-style-f{
+  background: #ececec;
+  background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  box-shadow: 
+  0 1px 2px rgba(0,0,0, 0.6), 
+  2px 1px 4px rgba(0,0,0, 0.3), 
+  2px 4px 3px rgba(3,0,128, 0.3), 
+  0 0 7px 2px rgba(0,208,255, 0.6), 
+  inset 0 1px 2px rgba(0,0,0, 0.6), 
+  inset 2px 1px 4px rgba(0,0,0, 0.3), 
+  inset 2px 4px 3px rgba(3,0,128, 0.3), 
+  inset 0 0 7px 2px rgba(29, 8, 150, 0.6);
+  h1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-shadow: 0 -3px 0 #333,
+      0 6px 8px rgba(0,0,0,.4),
+      0 9px 10px rgba(0,0,0,.15),
+      0 30px 10px rgba(0,0,0,.18),
+      0 15px 10px rgba(0,0,0,.21);
+    }
+    p{
+      color: #333;
+      font-weight: $font-media;
+    }
+    button{
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    font-family: "Lato",sans-serif;
+      border: 2px solid $purple;
+  color: $purple;
+  &:hover {
+    background-color: $purple;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    color: white;
+    transform:scale(1.1);
+  }
+
+}
+//animations
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  8% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  36% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: #1FFFFF;
+    opacity: 1;
+  }
+}
+@keyframes animationgradienttitle {
+    0% {
+        background-position: 0 1600px;
+    }
+    100% {
+        background-position: 1600px 0;
+    }
+  }}
+
+
+  .textclass-default{
+    .t-default{
+      display: block;
+    }
+  }
+.subtitle-f{
+  @extend .title-a-contact;
+  padding-bottom: 1rem;
+  text-align: center;
+  
+  width: 90%;
+  margin: auto auto 2rem auto;
 }

@@ -65,7 +65,7 @@
       <canvas id="projector">Some error here :(</canvas>
       <div id="app">
         <div id="wrapper">
-          <!-- Make sure data-text equals the text you put inside the tags. -->
+          <!-- HERO NAME -->
           <h1 class="glitch" data-text="
           MATIAS MARAZZA">MATIAS MARAZZA</h1>
           <span class="sub">FRONT END DESIGNER</span>
@@ -80,6 +80,7 @@
     </div>
     <div class="main-section">
       <div class="about-wrapper" id="about-me-s">
+        <!-- NEON TITLE -->
                   <div class="title-about"><h1>      <section class="neon-title">
             <div class="text">
               <h1>About Me</h1>
@@ -99,9 +100,10 @@
               to improve my technical and soft skills.
             </p>
             <div class="img-about">
+          <!-- IMAGE ABOUT ME -->
               <img
                 id="imgabout"
-                src="https://media-exp1.licdn.com/dms/image/D5635AQEAPX64LiRFDQ/profile-framedphoto-shrink_400_400/0/1631814933510?e=1631998800&v=beta&t=fsAARcO8lDakL_0R9JzqhWFFGrVI2fslnNsNS3eW2qw"
+                src="https://i.imgur.com/Ke3uUym.png"
                 alt=""
                 loading="lazy"
                 referrerpolicy="no-referrer"
@@ -109,7 +111,7 @@
             </div>
           </div>
         </div>
-
+        <!-- ABOUT ME - CARD SECTION-->
         <div class="cards-about anim2" data-delay="0s">
           <div class="first-card card-about">
             <h3 class="title-card">Earlier <br> Coder</h1>
@@ -133,7 +135,7 @@
           </div>
 
         </div>
-
+        <!-- ABOUT ME-  MUST KNOW -->
         <div class="grid-about about-me about-grid anim" data-delay="0s">
           <div class="grid-title div4-about"><h1>Must know!</h1></div>
           <div class="coffe div1-about">
@@ -155,7 +157,7 @@
         </div>
       </div>
 
-
+      <!-- PORTFOLIO SECTION -->
       <div class="portfolio" id="portfolio-link">
         <div class="port-folio">
           <div class="slider-port">
@@ -228,7 +230,7 @@
                   </div>
                 </label>
             
-                <!-- ===== Images ======= -->                           
+                <!-- ===== IMAGES ======= -->                           
             
                 <div class="slider">
                   <div class="slider-inner">
@@ -312,18 +314,19 @@
       </div>
         <div class="cards-contact">
           <div class="parent-cards">
+          <!-- Github card -->
             <div class="github-card card-c effect-shine">
               <a href="https://github.com/MarazzaM" target="blank">
               <h1>Github</h1>
               <div><i class='bx bxl-github bx-contact'></i></div></a>
             </div>
-
+           <!-- Linkedin card -->
             <div class="linkedin-card card-c">
               <a href="https://www.linkedin.com/in/matías-edgardo-marazza-cantero/" target="blank">
               <h1>Linkedin</h1>
               <div><i class='bx bxl-linkedin-square bx-contact' ></i></div></a>
             </div>
-
+          <!-- Mail card -->
             <div class="gmail-card card-c">
                <a href="mailto:blackempiremj@gmail.com">
               <h1>Email</h1>
@@ -339,25 +342,61 @@
             <h1>FUNDAMENTALS</h1>
             <h1>FUNDAMENTALS</h1>
           </div>
-        </section></h1></div>
-        <div class="cards-fundamentals">
-
-          <div class="card1-f card-fundamental">
+        </section></h1></div> 
+        <div class="subtitle-f"><h2>BASICS</h2>
+          <p>Basic tools for everyday work!</p>
+        </div>
+        <div class="cards-fundamentals" id="cards-fundamentals">
+          <div class=" card-fundamental base-card-f">
             <h1>HTML</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolorum.</p>
-            <button>Click!</button>
+            <p id="textid" class="textclass-default">HTML was the beginning of my journey to web development, although at first glance not so complex as the other two, i had a blast experimenting with it in my first day doing simple websites and there is a bunch of things to always improve while working with HTML,new tags to help SEO, better formating or just more comments! There is always room to improvement</p>
+            <button onclick="changeText()">Click!</button>
           </div>
 
-          <div class="card2-f card-fundamental">
+          <div class="card-fundamental base-card-f"  id="cssid">
             <h1>CSS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, beatae.</p>
-            <button>Click!</button>
+            <p>CSS is and increible tool that always brings me joy to use,  there is a thousand ways to represent the same things in screen, but each one is complete unique and slighly difference than the other. It gives you the reins over the styling of the web and that feels amazing, and the community is constantly active and innovating with new ways to use it</p>
+            <button class="purple" onclick="changeStyle()">Click!</button>
           </div>
 
-          <div class="card3-f card-fundamental">
+          <div class="card-fundamental base-card-f">
             <h1>JavaScript</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, unde.</p>
-            <button>Click!</button>
+            <p>JavaScript is an open world of opportunities, you are in full control of everything and all web components are at your mercy, imagination is the limit! The new ways the community discovers to use this wonderful language and the great flexibility it has never ceases to amaze me. From small functions to large frameworks, JS is ideal for achieving anything</p>
+<div class="clock-wrapper ninja" id="clock-wrapper">
+  <div class="clock">
+    <div class="flipper">
+      <div class="gear"></div>
+      <div class="gear"></div>
+      <div class="top">
+        <div class="textclock">00</div>
+      </div>
+      <div class="bottom">
+        <div class="textclock">00</div>
+      </div>
+    </div>
+    <div class="flipper">
+      <div class="gear"></div>
+      <div class="gear"></div>
+      <div class="top">
+        <div class="textclock">00</div>
+      </div>
+      <div class="bottom">
+        <div class="textclock">00</div>
+      </div>
+    </div>
+    <div class="flipper">
+      <div class="gear"></div>
+      <div class="gear"></div>
+      <div class="top">
+        <div class="textclock">00</div>
+      </div>
+      <div class="bottom">
+        <div class="textclock">00</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <button onclick="clockState()">Click!</button>
           </div>
 
         </div>
@@ -385,5 +424,6 @@
     <script src="./assets/js/letters.js"></script>
     <script src="./assets/js/back.js"></script>
     <script src="./assets/js/animation.js"></script>
+    <script src="./assets/js/fundamental.js"></script>
   </body>
 </html>
