@@ -40,30 +40,8 @@ $rotationtime: 0.75s;
     transform-style: preserve-3d;
     perspective: 1600px;
   }
-  .gear {
-    position: absolute;
-    top: calc(var(--clockheight) / 3);
-    width: 12px;
-    height: calc(var(--clockheight) / 3);
-    background: linear-gradient(
-      to bottom,
-      #000000 0%,
-      #666666 17%,
-      #7f7f7f 52%,
-      #7f7f7f 52%,
-      #0c0c0c 53%,
-      #595959 87%,
-      #131313 100%
-    );
-    outline: 3px solid #000;
-    z-index: 99;
-    transform-style: preserve-3d;
-    transform: translateZ(10px);
-    perspective: 0;
-  }
-  .gear:nth-child(2) {
-    left: calc(100% - 12px);
-  }
+
+ 
   .top,
   .bottom {
     box-shadow: 0 6px 6px 1px rgba(0, 0, 0, 0.5),
@@ -191,25 +169,18 @@ $rotationtime: 0.75s;
   @media only screen and (max-width: 1372px) and (min-width: 768px)  {
     .flipper{
         min-width: 58px;
-    }
-    .gear{
-        display: none;
     }}
     @media only screen and (max-width: 880px) and (min-width: 768px)  {
       .flipper{
           min-width: 47px;
       }
-      .gear{
-          display: none;
-      }
+
 }
 @media only screen and (max-width: 374px) {
   .flipper{
       min-width: 47px;
   }
-  .gear{
-      display: none;
-  }
+  
 }
 .ninja{
     display: none;

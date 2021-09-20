@@ -62,7 +62,6 @@
   background: #091243;
   position: relative;
   border-radius: var(--borderWidth);
-
   &::after{
     content: '';
     position: absolute;
@@ -116,6 +115,9 @@
       cursor: pointer;
   }
 
+    }
+    i{
+      font-style: normal;
     }
 }
 /*========== Second Style ==========*/
@@ -228,10 +230,16 @@
 
 
   .textclass-default{
-    .t-default{
-      display: block;
-    }
+      b{
+        display: none
+      }
   }
+
+.tcd-ninja{
+i{
+  display: none;
+}
+}
 .subtitle-f{
   @extend .title-a-contact;
   padding-bottom: 1rem;

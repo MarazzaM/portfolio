@@ -166,3 +166,32 @@ $(function () {
   mysecond = $(".clock .flipper:nth-child(3) div:not(.new) .textclock");
   setTime();
 });
+
+//im SO happy with this button, good grace
+changeStyles = () =>{
+  document.querySelectorAll(".card-fundamental").forEach(box => 
+    {
+      if(box.classList.contains("base-card-f")){
+        box.classList.toggle("second-style-f")
+        box.classList.remove("base-card-f")
+      }
+      else{
+        box.classList.remove("second-style-f")
+        box.classList.toggle("base-card-f")
+      }
+    
+  
+})};
+
+showClock = () =>{
+  document.querySelectorAll(".clock-wrapper").forEach(clock => 
+    {
+      if(clock.classList.contains("ninja")){
+        clock.classList.remove("ninja");
+      }
+      else{
+        clock.classList.add("ninja");;
+      }
+    
+  
+})};
