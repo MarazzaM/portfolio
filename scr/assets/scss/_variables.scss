@@ -26,12 +26,18 @@ $colors: (
     secondary: rgb(15, 175, 255),
     primary-dark:rgb(133,76,49),
     secondary-dark: darken(rgb(133,76,49), 20%),
-    body: #f3f3f0,
+    body: darken(rgb(243, 243, 240),3%),
     nav-color:rgba(38, 38, 38, 0.438),
     nav-color-fixed:rgba(38, 38, 38, 0.674),
     github:#c9510c,
     google:#ea4335,
-    linkedin:#0077b5
+    linkedin:#0077b5,
+    sass:#bf4080,
+    firebase:#dd2c00,
+    visual-studio:#0066B8,
+    material-ui:rgb(51, 153, 255),
+    react:#00d8ff,
+    bootstrap:#6610f2
 );
 //gradient varients, easier for background
 $gradient-color-1: #d53a9d;

@@ -119,6 +119,9 @@
     align-items: center;
     margin-bottom: 1rem;
     .card-about{
+        display: flex;
+flex-direction: column;
+justify-content: space-between;
         margin: auto;
         margin-bottom: 2rem;
         height: 100%;
@@ -150,6 +153,7 @@
 
     .bx-cards{
         font-size: 3rem;
+        margin: .5rem;
     }
     .title-card{
         text-transform: uppercase;

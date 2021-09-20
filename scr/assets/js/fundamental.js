@@ -34,21 +34,23 @@ for (i = 0; i < y.length; i++) {
 }
 }
 */
+
 //change text HTML SECTION
 changeText = () => {
   const element = document.getElementById("textid");
   const textone =
     "HTML was the beginning of my journey to web development, although at first glance not so complex as the other two, i had a blast experimenting with it in my first day doing simple websites and there is a bunch of things to always improve while working with HTML,new tags to help SEO, better formating or just more comments! There is always room to improvement";
+    const groovy = "HTML is groovy, isn't it?";
   if (element.classList.contains("textclass-default")) {
     element.classList.remove("textclass-default");
-    element.innerHTML = "HTML is groovy, isn't it?";
+    element.innerHTML = `${groovy}`;
   } else {
     element.innerHTML = `${textone}`;
     element.classList.add("textclass-default");
   }
 };
 
-//change clock
+//change clock DISPLAY
 clockState = () => {
   const element = document.getElementById("clock-wrapper");
   if (element.classList.contains("ninja")) {

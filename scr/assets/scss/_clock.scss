@@ -1,7 +1,9 @@
-
+$clockheigth: 220px;
+$radius: 4px;
+$rotationtime: 0.75s;
 :root {
     --clockheight: 220px;
-    --radius: 30px;
+    --radius: 4px;
     --rotationtime: 0.75s;
   }
   
@@ -11,9 +13,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 12px;
    
-    height: var(--clockheight);
+    height:$clockheigth;
     /*   background: rgb(26, 25, 28); */
-    border-radius: var(--radius);
+    border-radius: $radius;
     /*   background-repeat: no-repeat; */
     background: -webkit-linear-gradient(left, $gradient-color-1,$gradient-color-2 , $gradient-color-1);
     
@@ -78,8 +80,8 @@
     background-image: linear-gradient(rgb(48, 49, 53) 0%, rgb(56, 57, 62) 100%);
     margin-top: 10px;
     margin-bottom: 5px;
-    border-top-left-radius: calc(var(--radius) * 0.65);
-    border-top-right-radius: calc(var(--radius) * 0.65);
+    border-top-left-radius: calc($radius * 0.65);
+    border-top-right-radius: calc($radius * 0.65);
   }
   .bottom {
     position: relative;
@@ -89,8 +91,8 @@
     background-image: linear-gradient(rgb(57, 58, 63) 0%, rgb(65, 65, 71) 100%);
     margin-top: -5px;
     margin-bottom: 10px;
-    border-bottom-left-radius: calc(var(--radius) * 0.65);
-    border-bottom-right-radius: calc(var(--radius) * 0.65);
+    border-bottom-left-radius: calc($radius * 0.65);
+    border-bottom-right-radius: calc($radius * 0.65);
   }
   .textclock {
     font-size: 3rem;
@@ -184,15 +186,30 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 1rem;
-      color:#ba55d3;
+      color: lightgray;
   }
-  @media only screen and (max-width: 1142px) and (min-width: 768px)  {
+  @media only screen and (max-width: 1372px) and (min-width: 768px)  {
     .flipper{
         min-width: 58px;
     }
     .gear{
         display: none;
-    }
+    }}
+    @media only screen and (max-width: 880px) and (min-width: 768px)  {
+      .flipper{
+          min-width: 47px;
+      }
+      .gear{
+          display: none;
+      }
+}
+@media only screen and (max-width: 374px) {
+  .flipper{
+      min-width: 47px;
+  }
+  .gear{
+      display: none;
+  }
 }
 .ninja{
     display: none;
