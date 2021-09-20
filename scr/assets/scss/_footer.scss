@@ -1,0 +1,70 @@
+.footer{
+    @include desktop{
+    
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .contact-f { grid-area: 1 / 1 / 4 / 2; }
+        .sections-f { grid-area: 1 / 2 / 4 / 3; }
+        .div-button { grid-area: 3 / 3 / 4 / 6; }
+        .phrase-f { grid-area: 1 / 3 / 3 / 6; } 
+}
+.grid-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    ul{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        li{
+            margin-bottom: 1rem;
+        }
+        }
+        a{
+            text-decoration: none;
+            color: color(body);
+        }
+        h1{
+            color: #fc3735;
+            background: -webkit-linear-gradient(left, $gradient-color-1,$gradient-color-2 , $gradient-color-1);
+            background-size: 1600px 200px;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation-duration: 3s;
+            animation-name: animationgradienttitle;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+    }
+.phrase-f{
+    @include desktop{
+    
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .grid-inside-f2 { grid-area: 1 / 1 / 3 / 3; }
+            .grid-inside-f { grid-area: 1 / 3 / 3 / 4; }
+        
+.grid-inside-f2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}}
+.footer-img{
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+}

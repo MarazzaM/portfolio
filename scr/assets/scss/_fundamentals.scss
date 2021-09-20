@@ -366,6 +366,13 @@ $bar-bg: rgba(0,0,0,0.075);
   }
 .wrapper-margin{
   margin: auto;
+  &:hover{
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    mask-size: 200%;
+    -webkit-mask-size: 200%;
+    animation: shine 1.5s infinite;
+}
 }
 /*========== TOOLS ==========*/
 .tool-card{
@@ -387,4 +394,11 @@ $bar-bg: rgba(0,0,0,0.075);
 }
 .title-vs, .bxl-visual-studio{
   color: color(visual-studio) !important;
+}
+.ref-card{
+  text-decoration: none;
+}
+.bold-f{
+  letter-spacing: $tittle-spacing;
+  text-transform: uppercase;
 }
