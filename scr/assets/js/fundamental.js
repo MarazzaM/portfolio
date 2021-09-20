@@ -59,3 +59,22 @@ clockState = () => {
     element.classList.add("ninja");;
   }
 };
+
+hide = () => {
+  const element = document.getElementById("mainsection");
+  if (element.classList.contains("main-section")) {
+    element.classList.remove("main-section");
+    element.classList.add("ninja");
+  } else {
+    element.classList.add("main-section");
+    element.classList.remove("ninja");
+  }
+};
+
+show = () => {
+  const element = document.getElementById("mainsection");
+  if (element.classList.contains("ninja")) {
+    element.classList.add("main-section");
+    element.classList.remove("ninja");
+  }
+};

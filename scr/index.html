@@ -75,10 +75,10 @@
         <div class="chevron"></div>
         <div class="chevron"></div>
         <div class="chevron"></div>
-        <span class="cta-span"><a href="#about-me-s">Scroll Down</a></span>
+        <span class="cta-span"><a id="ctahidden" onclick="show()" href="#about-me-s">Scroll Down</a></span>
       </div>
     </div>
-<div class="main-section">
+<div class="main-section" id="mainsection">
       <div class="about-wrapper" id="about-me-s">
         <!-- NEON TITLE -->
                   <div class="title-about"><h1>      <section class="neon-title">
@@ -497,8 +497,8 @@
           <p>Get some rest and apreciate a hedgehog</p>
         </div>
         <div class="erizo-wall">
-         <div class="erizo-container"> 
-          <p>Do you like hedgehogs ? Me too!</p>
+         <div class="erizo-container" id="erizotexto"> 
+          <p >Do you like hedgehogs ? Me too!</p>
            <img loading="lazy" src="https://images8.alphacoders.com/401/401703.jpg" alt="cute ERIZO">
         </div>
         </div>
@@ -531,19 +531,17 @@
           <div class="phrase-f grid-footer">
             <div class="grid-inside-f grid-footer">
               <!-- IMAGE ABOUT ME -->
-                  <img
-                  class="footer-img"
-                    src="https://i.imgur.com/Ke3uUym.png"
-                    alt=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer"
-                  />
+              <i class='bx bxs-heart' ></i>
               </div>
-            <div class="grid-inside-f2 grid-footer">Soy un cogido</div>
+            <div class="grid-inside-f2 grid-footer">
+              <h1>You are awesome!</h1>
+              <p>Thank you for taking the time to browse my  web</p><br>
+              <p>Try out the button (You can undone it by clicking something!) <i class='bx bx-down-arrow-alt' ></i></p>
+            </div>
           </div>
           <!-- Hide Button -->
           <div class="div-button grid-footer">
-            <button>Hide all!</button>
+            <button onclick="hide()">Hide all!</button>
           </div>
 
         </div>
