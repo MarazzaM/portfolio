@@ -176,6 +176,7 @@ $code-typing-animation-duration: 1200ms;
 }
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   position: relative
