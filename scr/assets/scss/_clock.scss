@@ -160,9 +160,8 @@ $rotationtime: 0.75s;
   }
   .clock-wrapper{
       width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
+      margin: auto;
       margin-bottom: 1rem;
       color: lightgray;
   }
