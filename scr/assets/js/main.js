@@ -503,6 +503,5 @@ changeText2 = () => {
   const closeh = document.getElementById("closetoast");
   closetoast.addEventListener("click", () => {
     heart.classList.remove("show");
-    clearTimeout(heartTimeout);
   });
   

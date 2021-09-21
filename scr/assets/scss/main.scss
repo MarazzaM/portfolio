@@ -35,7 +35,9 @@ section{
   margin: 0;
   padding: 0;
 }
-
+html{
+  width: 100vw;
+}
 body {
   font-family: $font-body;
   .navigation, .hero{
@@ -171,4 +173,10 @@ $code-typing-animation-duration: 1200ms;
 
 #laptop__code {
   transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
 }
