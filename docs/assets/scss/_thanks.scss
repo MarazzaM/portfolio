@@ -1,0 +1,50 @@
+.thanks-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.title-thanks{
+h1{
+    color: #00bcd4 !important;
+}
+}
+.erizo-container{
+    transition: all .5s ease;
+    position: relative;
+    text-align: center;
+    color: white;
+    p{
+        width: 80%;
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: $z-tooltip;
+  display: none;
+    font-size: $erizo-font2;
+  @include desktop2{
+    font-size: $erizo-font;
+    color: color(body);
+    letter-spacing: $normal-spacing;
+  }
+    }
+    &:hover{
+        mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+       p{
+           display: block;
+       }
+    }
+
+}
+.erizo-wall{
+    width: 95%;
+    height: 75%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+}

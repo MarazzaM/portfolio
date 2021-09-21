@@ -1,0 +1,58 @@
+.parent-cards{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+        a{
+    text-decoration: none;
+    color: white;
+        }
+    .card-c{
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+        width: 80vw;
+        background: rgba(0,0,0,.6);
+        &:hover{
+            mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            mask-size: 200%;
+            -webkit-mask-size: 200%;
+            animation: shine 1.5s infinite;
+        }
+    }
+    .bx-contact{
+        font-size: 10rem;
+    }
+    .bx-mail-send{
+        color:color(google);
+    }
+    .bxl-linkedin-square{
+        color: color(linkedin);
+    }
+    .bxl-github{
+        color: color(github);
+    }
+    
+    @include desktop{
+        justify-content: space-around;
+
+        width: 70vw;
+        flex-direction: row;
+        margin:auto;
+    }
+}
+  
+  @keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }

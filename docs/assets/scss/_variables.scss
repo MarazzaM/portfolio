@@ -1,0 +1,102 @@
+/*========== FONTS ==========*/
+//oswald
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+/*========== shortcuts function color and screen size==========*/
+@function color($color-name){
+    @return map-get($colors,$color-name)
+};
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin desktop2 {
+    @media(min-width: #{$desktop2}){
+        @content;
+    }
+}
+@mixin desktop3 {
+    @media(min-width: #{$desktop3}){
+        @content;
+    }
+}
+$colors: (
+    primary: rgb(235, 32, 18),
+    secondary: rgb(15, 175, 255),
+    primary-dark:rgb(133,76,49),
+    secondary-dark: darken(rgb(133,76,49), 20%),
+    body: darken(rgb(243, 243, 240),3%),
+    nav-color:rgba(38, 38, 38, 0.438),
+    nav-color-fixed:rgba(38, 38, 38, 0.674),
+    github:#c9510c,
+    google:#ea4335,
+    linkedin:#0077b5,
+    sass:#bf4080,
+    firebase:#dd2c00,
+    visual-studio:#0066B8,
+    material-ui:rgb(51, 153, 255),
+    react:#00d8ff,
+    bootstrap:#6610f2
+);
+//gradient varients, easier for background
+$gradient-color-1: #d53a9d;
+$gradient-color-2: #00bcd4;
+$purple : #512DA8;
+
+
+$desktop:768px;
+$desktop2:950px;
+$desktop3:1130px;
+
+//Fuente
+$font-body:'Oswald', sans-serif;
+
+$big-big-font: 8rem;
+$biggest-font-s: 9rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 2rem;
+$regular-font: 1.3rem;
+$small-font: .81rem;
+$smallest-font: .75rem;
+$font-size-hero: 15vw;
+$icon-font: 3rem;
+$erizo-font:5rem;
+
+//spacing
+$normal-spacing:.1rem;
+$tittle-spacing:.2rem;
+
+//font weigth
+$font-media:500;
+$font-semi:600;
+
+//margins
+
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+//index
+$z-tooltip:10;
+$z-fixed:100;
+
+
+$regular-font2: 1.5rem;
+$big-big-font2:4rem;
+$erizo-font2:2rem;
+@media screen and (min-width: $desktop){
+$big-big-font: 5rem;
+$biggest-font-s:1rem;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.3rem;
+$regular-font: 1.2rem;
+$small-font: .88rem;
+$smallest-font: .81rem;
+$font-size-hero: 9vw;
+}
