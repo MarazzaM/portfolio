@@ -174,15 +174,16 @@ $code-typing-animation-duration: 1200ms;
 #laptop__code {
   transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);
 }
-html, body {
-  @include desktop3{
-    overflow-x: hidden;
-  scroll-behavior: smooth;
-  }
-}
-body {
-  @include desktop3{
-  position: relative
 
+@media(max-width: 1100px ){
+  html, body {
+   
+      overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+  }
+  body {
+    position: relative
+  
   }
 }
